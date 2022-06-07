@@ -33,9 +33,16 @@ li{
    max-width: 800px;
    margin: 0 auto;
 }
+.container{
+    padding: 50px 0;
+}
 
 .text-purple{
     color:#6030b1;
+}
+
+.section_title{
+    margin-bottom: 20px;
 }
 /* NAVIGATION BAR */
 
@@ -73,6 +80,9 @@ nav{
     color: #6030b1;
     margin: 0 12px;
     font-weight: bold;
+}
+section:nth-child(even){
+    background-color: #f8f8f8;
 }
 
 /* ABOUT ME */
@@ -130,4 +140,45 @@ nav{
 }
 .about-me_img{
     width: 100%;
+}
+
+/* TECH - STACK */
+
+.language_img{
+    width: 100%;
+    max-width: 100px;
+    transition: all 300ms;
+}
+.language:hover .language_img{
+    filter: brightness(80%);
+    opacity: 0.86;
+    transform: scale(0.9);
+}
+.language{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.language_img-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 16px;
+}
+.language_list{
+    display: flex;
+    justify-content: center;
+}
+.language_name{
+    position: absolute;
+    bottom: 0;
+    transform: scale(0);
+    transition: all 300ms;
+    font-size: 20px;
+    opacity: 0;
+}
+.language:hover .language_name{
+    transform: scale(1);
+    opacity: 1;
 }
