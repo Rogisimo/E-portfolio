@@ -5,6 +5,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 h1, h2, h3, h4, h5, h6, span{
     color: #242424;
@@ -139,6 +142,19 @@ section:nth-child(even){
     overflow: hidden;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     margin-bottom: 28px;
+    animation: animate-profile-picture 800ms 200ms backwards;
+}
+
+@keyframes animate-profile-picture{
+    0%{
+        transform: scale(0);
+    }
+    80%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 .about-me_picture{
     width: 100%;
@@ -151,15 +167,31 @@ section:nth-child(even){
 .about-me_info-para{
     font-size: 20px;
     margin-bottom: 28px;
+    animation: fade-up 650ms 600ms backwards;
 }
 .about-me_info-title{
     margin-bottom: 20px;
+    animation: fade-up 650ms 400ms backwards;
 }
 .about-me_link{
     font-size: 20px;
     color: #242424;
     text-decoration: none;
     padding: 0 16px;
+}
+.about-me_links{
+    animation: fade-up 650ms 800ms backwards;
+}
+
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .about-me_img-container{
     flex: 1;
@@ -168,6 +200,16 @@ section:nth-child(even){
 }
 .about-me_img{
     width: 100%;
+    animation: fade-in 1200ms 800ms backwards;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 /* TECH - STACK */
