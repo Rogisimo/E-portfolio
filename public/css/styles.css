@@ -42,7 +42,7 @@ li{
 }
 
 .text-purple{
-    color:#6030b1;
+    color:orange;
 }
 a{
     text-decoration: none;
@@ -97,7 +97,7 @@ nav{
     font-weight: 600;
 }
 .nav_link-anchor-primary{
-    background-color: #6030b1;
+    background-color: orange;
     padding: 8px 20px;
     border-radius: 50px;
     color: white;
@@ -108,7 +108,7 @@ nav{
 }
 .personal_logo{
     font-size: 24px;
-    color: #6030b1;
+    color: orange;
     margin: 0 12px;
     font-weight: bold;
 }
